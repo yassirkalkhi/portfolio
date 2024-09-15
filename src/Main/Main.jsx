@@ -32,7 +32,10 @@ const Main = () => {
         </div>
 
         <div className="flex items-center gap-4 mt-5 flex-col sm:flex-row ">
-          <button className="bg-white rounded-lg shadow-md shadow-white/30 px-4 py-2 font-semibold hover:opacity-70 transition-all ease-linear antialiased">Hire me</button>
+        <a 
+      href="mailto:yasserkalkhi@gmail.com" 
+      className="bg-white rounded-lg shadow-md shadow-white/30 px-4 py-2 font-semibold hover:opacity-70 transition-all ease-linear antialiased"
+    >Hire me</a>
           <button className="bg-white/40 rounded-lg text-white shadow-md shadow-white/20 px-4 py-2 font-semibold hover:opacity-70 transition-all ease-linear">Resume</button>
         </div>
       </div>
@@ -114,7 +117,7 @@ const Main = () => {
         </div>
         <div className="md:row-span-2 md:col-start-1 md:row-start-8 xl:row-span-3 xl:col-start-2 xl:row-start-4 rounded-lg border border-white/20 bg-black bg-opacity-70 backdrop-blur-md flex p-4 text-white font-light overflow-hidden">
                    <div className='flex items-center justify-center w-full h-fullrounded '>
-                   <i className='bx bx-git-compare text-white/20 text-[20rem] absolute top-16 md:text-[24rem] md:top-16 xl:top-40 2xl:top-14  '></i>
+                   <i className='bx bx-git-compare text-white/20 text-[20rem] absolute top-28 md:text-[24rem] md:top-16 xl:top-40 2xl:top-28  '></i>
                    <span className='text-5xl font-bold text-center'><span className='text-8xl'>Pro</span> <br />Version  Controle <br /> <span className='text-3xl text-white/70'>with</span> <span className='text-4xl text-white/90'>Git <span className='text-2xl text-white/70'>&</span> Github</span> </span>
                    </div>
 
@@ -130,8 +133,10 @@ const Main = () => {
        
 
       </div>
+     
     </>
   );
 };
 
 export default Main;
+

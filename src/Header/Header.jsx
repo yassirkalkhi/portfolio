@@ -1,12 +1,13 @@
 import React from "react";
 import { Button } from "../components/ui/button";
 import Modal from "../components/Modal";
-
+import { Link } from "react-router-dom";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
 } from "../components/ui/sheet";
+
 
 
 const Header = () => {
@@ -16,9 +17,9 @@ const Header = () => {
         <div className="flex items-center gap-6">
           <div className="logo text-white font-semibold">@yasserkalkhi</div>
           <nav className="hidden md:flex text-white/60 gap-6 text-sm font-medium">
-            <a href="/home">Home</a>
-            <a href="/work">Work</a>
-            <a href="/resume">Resume</a>
+            <Link to="/home">Home</Link>
+            <Link to="/work">Work</Link>
+            <Link to="/resume">Resume</Link>
           </nav>
         </div>
         <div className="flex gap-4 h-full items-center justify-center">
@@ -61,16 +62,16 @@ const Header = () => {
               className="bg-black text-white w-[300px] sm:w-[400px] border-white/20"
             >
               <nav className="flex flex-col gap-4 mt-8">
-                <a href="/home" className="text-white/60 hover:text-white">
+                <Link to="/home" className="text-white/60 hover:text-white">
                   Home
-                </a>
+                </Link>
                
-                <a href="/work" className="text-white/60 hover:text-white">
+                <Link to="/work" className="text-white/60 hover:text-white">
                   Work
-                </a>
-                <a href="/resume" className="text-white/60 hover:text-white">
+                </Link>
+                <Link to="/resume" className="text-white/60 hover:text-white">
                   Resume
-                </a>
+                </Link>
              <Modal btnVariant="" />
               </nav>
             </SheetContent>

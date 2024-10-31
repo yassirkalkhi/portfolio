@@ -1,6 +1,5 @@
-import React from 'react';
-import { Button } from '../components/ui/button';
-import { motion } from 'framer-motion'; // If you're using framer-motion
+import React from "react";
+import { Button } from "../components/ui/button";
 
 const NotFound = () => {
   return (
@@ -16,13 +15,14 @@ const NotFound = () => {
         </div>
 
         <p className="text-white/60 text-sm sm:text-base md:text-lg max-w-md mx-auto">
-          Oops! The page you're looking for seems to have wandered off into the digital void.
+          Oops! The page you're looking for seems to have wandered off into the
+          digital void.
         </p>
 
         <div className="pt-4">
           <a href="/" className="inline-block">
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               className="group  relative px-6 py-2 text-sm sm:text-base  overflow-hidden transition-all duration-300
                          border-white/20  bg-white hover:bg-white/80"
             >
@@ -35,11 +35,19 @@ const NotFound = () => {
         </div>
 
         <div className="flex items-center gap-4 pt-8 text-white/40 text-xs sm:text-sm">
-          <a href="/work" className="hover:text-white/60 transition-colors">Projects</a>
+          <a href="/work" className="hover:text-white/60 transition-colors">
+            Projects
+          </a>
           <span>•</span>
-          <a href="/home" className="hover:text-white/60 transition-colors">Contact</a>
+          <a href="/home" className="hover:text-white/60 transition-colors">
+            Contact
+          </a>
           <span>•</span>
-          <a href="https://github.com/yassirkalkhi" target='_blank' className="hover:text-white/60 transition-colors">
+          <a
+            href="https://github.com/yassirkalkhi"
+            target="_blank"
+            className="hover:text-white/60 transition-colors"
+          >
             GitHub
           </a>
         </div>
@@ -47,9 +55,11 @@ const NotFound = () => {
 
       <div className="fixed inset-0 -z-10 overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:32px]" />
-        <div className="absolute left-0 top-0 -z-10 h-full w-full 
+        <div
+          className="absolute left-0 top-0 -z-10 h-full w-full 
                       [background:radial-gradient(circle_500px_at_50%_200px,#3b82f6,transparent)]
-                      opacity-20" />
+                      opacity-20"
+        />
       </div>
     </div>
   );

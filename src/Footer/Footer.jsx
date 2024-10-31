@@ -1,5 +1,4 @@
-import React from 'react'
-import {Avatar , AvatarImage,AvatarFallback} from "../components/ui/avatar"
+import React from "react";
 
 const Footer = () => {
   return (
@@ -9,43 +8,57 @@ const Footer = () => {
           {/* Left Section */}
           <div className="flex items-center gap-3">
             <div>
-              <h3 className="text-white/90 font-semibold text-sm md:text-base text-center sm:text-left">Built by me</h3>
-              <p className="text-white/60 text-xs md:text-sm text-center sm:text-left">The source code is available on GitHub.</p>
+              <h3 className="text-white/90 font-semibold text-sm md:text-base text-center sm:text-left">
+                Built by me
+              </h3>
+              <p className="text-white/60 text-xs md:text-sm text-center sm:text-left">
+                The source code is available on GitHub.
+              </p>
             </div>
           </div>
 
           {/* Right Section - Social Icons */}
           <div className="flex items-center flex-wrap justify-center sm:justify-end gap-3 sm:gap-4">
-            <a href="https://github.com/yassirkalkhi" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               className="text-white/60 hover:text-white/90 transition-colors">
+            <a
+              href="https://github.com/yassirkalkhi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/60 hover:text-white/90 transition-colors"
+            >
               <i className="fa-brands fa-github text-lg sm:text-xl"></i>
             </a>
-            
-            <a href="https://linkedin.com/in/yassir-kalkhi-83a8382b7/" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               className="text-white/60 hover:text-white/90 transition-colors">
+
+            <a
+              href="https://linkedin.com/in/yassir-kalkhi-83a8382b7/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/60 hover:text-white/90 transition-colors"
+            >
               <i className="fa-brands fa-linkedin text-lg sm:text-xl"></i>
             </a>
-            
-            <a href="https://twitter.com/yassirkalkhi" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               className="text-white/60 hover:text-white/90 transition-colors">
+
+            <a
+              href="https://twitter.com/yassirkalkhi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/60 hover:text-white/90 transition-colors"
+            >
               <i className="fa-brands fa-x-twitter text-lg sm:text-xl"></i>
             </a>
-            
-            <a href="mailto:yasserkalkhi@g  mail.com" 
-               className="text-white/60 hover:text-white/90 transition-colors">
+
+            <a
+              href="mailto:yasserkalkhi@g  mail.com"
+              className="text-white/60 hover:text-white/90 transition-colors"
+            >
               <i className="fa-solid fa-envelope text-lg sm:text-xl"></i>
             </a>
-            
-            <a href="https://discord.com/users/trapx01#8190" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               className="text-white/60 hover:text-white/90 transition-colors">
+
+            <a
+              href="https://discord.com/users/trapx01#8190"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/60 hover:text-white/90 transition-colors"
+            >
               <i className="fa-brands fa-discord text-lg sm:text-xl"></i>
             </a>
           </div>
@@ -59,7 +72,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

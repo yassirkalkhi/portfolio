@@ -3,7 +3,7 @@ import React, { useState, useContext, createContext } from "react";
 const ActiveLinkContext = createContext(null);
 
 const LinkWrapper = ({ children }) => {
-  const [wichLink, setWhichLink] = useState(null);  
+  const [wichLink, setWhichLink] = useState("home");  
   const setLink = (value) => {
     setWhichLink(value);
   };

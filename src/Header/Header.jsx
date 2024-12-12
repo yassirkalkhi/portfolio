@@ -19,9 +19,9 @@ const Header = () => {
         <div className="flex items-center gap-6">
           <div className="logo text-white font-semibold">@yasserkalkhi</div>
           <nav className="hidden md:flex text-white/60 gap-6 text-sm font-medium">
-            <Link to="/home"  style={wichLink === "home"?   {color:"white"} : {}}>Home</Link>
-            <Link to="/work" style={wichLink === "work"?   {color:"white"} : {}}>Work</Link>
-            <Link to="/resume" style={wichLink === "resume"?   {color:"white"} : {}}>Resume</Link>
+            <Link to="/home"  style={wichLink === "home"?   {color:"white"} : {}} onClick={()=>{setLink("home")}} >Home</Link>
+            <Link to="/work" style={wichLink === "work"?   {color:"white"} : {}} onClick={()=>{setLink("work")}} >Work</Link>
+            <Link to="/resume" style={wichLink === "resume"?   {color:"white"} : {}} onClick={()=>{setLink("resume")}} >Resume</Link>
           </nav>
         </div>
         <div className="flex gap-4 h-full items-center justify-center">

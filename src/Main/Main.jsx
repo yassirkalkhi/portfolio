@@ -214,7 +214,7 @@ const Main = () => {
                   </div>
                 </div>
                 <div className="flex items-center min-w-0 border border-white/10 rounded-lg p-3 hover:bg-white/5 transition-colors">
-                  <i class="bx bxl-tailwind-css text-sm md:text-2xl text-white/90 scale-125 me-3 shrink-0"></i>
+                  <i className="bx bxl-tailwind-css text-sm md:text-2xl text-white/90 scale-125 me-3 shrink-0"></i>
                   <div className="min-w-0">
                     <p className="text-white/80 font-semibold text-xs sm:text-sm md:text-base whitespace-nowrap overflow-hidden text-ellipsis">
                       Tailwindcss
@@ -236,7 +236,7 @@ const Main = () => {
                   </div>
                 </div>
                 <div className="flex items-center min-w-0 border border-white/10 rounded-lg p-3 hover:bg-white/5 transition-colors">
-                  <i class="bx bxl-mongodb  text-sm md:text-2xl scale-125 text-white/90 me-3 shrink-0"></i>
+                  <i className="bx bxl-mongodb  text-sm md:text-2xl scale-125 text-white/90 me-3 shrink-0"></i>
                   <div className="min-w-0">
                     <p className="text-white/80 font-semibold text-xs sm:text-sm md:text-base whitespace-nowrap overflow-hidden text-ellipsis">
                       Mongo DB
@@ -247,7 +247,7 @@ const Main = () => {
                   </div>
                 </div>
                 <div className="flex items-center min-w-0 border border-white/10 rounded-lg p-3 hover:bg-white/5 transition-colors">
-                  <i class="bx bxl-firebase  text-sm md:text-2xl scale-125 text-white/90 me-3 shrink-0"></i>
+                  <i className="bx bxl-firebase  text-sm md:text-2xl scale-125 text-white/90 me-3 shrink-0"></i>
                   <div className="min-w-0">
                     <p className="text-white/80 font-semibold text-xs sm:text-sm md:text-base whitespace-nowrap overflow-hidden text-ellipsis">
                       FireBase

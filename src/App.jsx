@@ -1,6 +1,7 @@
 import "./tailwindcss.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React, { Suspense, lazy } from "react";
+import {LinkWrapper,useActiveLink} from "./Context/ActiveLinkContext"
 import Loader from "./components/Loader";
 
 const Home = lazy(() => import("./pages/Home"));
@@ -9,6 +10,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
   return (
+    <LinkWrapper>
     <Router>
       <Suspense fallback={<Loader />}>
         <Routes>
@@ -19,6 +21,7 @@ function App() {
         </Routes>
       </Suspense>
     </Router>
+    </LinkWrapper>
   );
 }
 

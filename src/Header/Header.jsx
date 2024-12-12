@@ -1,4 +1,5 @@
-import React from "react";
+import React ,{useEffect} from "react";
+import { useActiveLink } from "../Context/ActiveLinkContext";
 import { Button } from "../components/ui/button";
 import Modal from "../components/Modal";
 import { Link } from "react-router-dom";
@@ -11,15 +12,16 @@ import {
 
 
 const Header = () => {
+  const {wichLink,setLink} = useActiveLink()
   return (
     <header className="flex items-center justify-center w-full   py-5 ">
       <div className="container h-full flex justify-between items-center px-4 md:px-16">
         <div className="flex items-center gap-6">
           <div className="logo text-white font-semibold">@yasserkalkhi</div>
           <nav className="hidden md:flex text-white/60 gap-6 text-sm font-medium">
-            <Link to="/home">Home</Link>
-            <Link to="/work">Work</Link>
-            <Link to="/resume">Resume</Link>
+            <Link to="/home"  style={wichLink === "home"?   {color:"white"} : {}}>Home</Link>
+            <Link to="/work" style={wichLink === "work"?   {color:"white"} : {}}>Work</Link>
+            <Link to="/resume" style={wichLink === "resume"?   {color:"white"} : {}}>Resume</Link>
           </nav>
         </div>
         <div className="flex gap-4 h-full items-center justify-center">
@@ -29,12 +31,12 @@ const Header = () => {
           <ul className="flex text-white/90 text-xl gap-4">
             <li>
               <a href="https://x.com/yassirkalkhi" target="_blank">
-                <i class="fa-brands fa-x-twitter"></i>
+                <i className="fa-brands fa-x-twitter"></i>
               </a>
             </li>
             <li>
               <a href="https://github.com/yassirkalkhi" target="_blank">
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github"></i>
               </a>
             </li>
             <li>
@@ -42,7 +44,7 @@ const Header = () => {
                 href="https://www.linkedin.com/in/yassir-kalkhi-83a8382b7/"
                 target="_blank"
               >
-                <i class="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin"></i>
               </a>
             </li>
           </ul>
@@ -54,7 +56,7 @@ const Header = () => {
                 size="icon"
                 className="md:hidden text-white"
               >
-                <i class="fa-solid fa-bars text-xl"></i>
+                <i className="fa-solid fa-bars text-xl"></i>
               </Button>
             </SheetTrigger>
             <SheetContent

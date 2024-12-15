@@ -17,11 +17,13 @@ const Header = () => {
     <header className="flex items-center justify-center w-full   py-5 ">
       <div className="container h-full flex justify-between items-center px-4 md:px-16">
         <div className="flex items-center gap-6">
-          <div className="logo text-white font-semibold">@yasserkalkhi</div>
-          <nav className="hidden md:flex text-white/60 gap-6 text-sm font-medium">
+          <div className="logo text-white font-semibold ">@yasserkalkhi</div>
+          <nav className="hidden md:flex text-white/60 gap-6 text-sm  font-semibold">
             <Link to="/home"  style={wichLink === "home"?   {color:"white"} : {}} onClick={()=>{setLink("home")}} >Home</Link>
             <Link to="/work" style={wichLink === "work"?   {color:"white"} : {}} onClick={()=>{setLink("work")}} >Work</Link>
             <Link to="/resume" style={wichLink === "resume"?   {color:"white"} : {}} onClick={()=>{setLink("resume")}} >Resume</Link>
+            <Link to="/blog" style={wichLink === "resume"?   {color:"white"} : {}} onClick={()=>{setLink("blog")}} >Blog</Link>
+
           </nav>
         </div>
         <div className="flex gap-4 h-full items-center justify-center">
@@ -73,6 +75,9 @@ const Header = () => {
                 </Link>
                 <Link to="/resume" className="text-white/60 hover:text-white">
                   Resume
+                </Link>
+                <Link to="/blog" className="text-white/60 hover:text-white">
+                  Blog
                 </Link>
              <Modal btnVariant="" />
               </nav>

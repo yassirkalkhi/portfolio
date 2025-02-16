@@ -6,11 +6,31 @@ import { Button } from "../components/ui/button";
 const Projects = () => {
   const projects = [
     {
+      title: "Aspira",
+      description:
+        "Aspira! A modern, sleek platform designed to connect job seekers and employers, offering a smooth and enjoyable experience in job searching and recruitment.",
+      image: "./project1.png",
+      tech: ["NextJs", 'Typescript',"Tailwind",'@Reduxjs/Toolkit', 'Axios','Zod',"Firebase",'Cloudinary','Algolia'],
+      link: "https://github.com/yassirkalkhi/Aspira",
+      duration: "In Progress",
+      date: "Dec 2024",
+    },
+    {
+      title: "Proshift",
+      description:
+        "Proshift Connecting Visionaries with Skilled Freelancers to Shape the Future of Work, Join us in connecting with skilled freelancers to bring your ideas to life while achieving your goals. Hire today and turn your vision into reality!",
+      image: "./project1.png",
+      tech: ["NextJs", 'Typescript',"Tailwind",'@Reduxjs/Toolkit', 'axios','Zod',"Firebase",'Cloudinary','Algolia'],
+      link: "https://github.com/yassirkalkhi/proshift",
+      duration: "In Progress",
+      date: "Dec 2024",
+    },
+    {
       title: "chat-with-ollama",
       description:
         "A dynamic web-based chatbot platform that allows users to engage in interactive conversations with the Ollama Large Language Model.",
       image: "./project1.png",
-      tech: ["React", "Tailwind", "Api"],
+      tech: ["React", "Tailwind", "Api",'GROQ','groq-sdk'],
       link: "https://github.com/yassirkalkhi/chat-with-ollama",
       duration: "1 week",
       date: "Jan 2024 - Jun 2024",
@@ -20,24 +40,13 @@ const Projects = () => {
       description:
         "Telegram chatbot that allows users to engage in interactive conversations with the advanced LLaMA 3 model. Built with the groq-sdk and GROQ API.",
       image: "./project1.png",
-      tech: ["React", "Tailwind", "Api", "telegraf lib"],
+      tech: ["NodeJS", "Express", "Api", "telegraf lib"],
       link: "https://github.com/yassirkalkhi/telegram-chatbot",
       duration: "1 week",
       date: "Jan 2024 - Jun 2024",
     },
-    {
-      title: "bicycle-rental",
-      description:
-        "A fully responsive and user-friendly bicycle rental platform designed to streamline the process of renting bikes online",
-      image: "./project1.png",
-      tech: [],
-      link: "https://github.com/yassirkalkhi/bicycle-rental",
-      duration: "In Progress",
-      date: "Oct 2024",
-    },
   ];
 
-  const skills = ["Skill 1", "Skill 2", "Skill 3", "Skill 4", "Skill 5"];
 
   return (
     <main className="flex flex-col items-center text-start min-h-screen pt-20">

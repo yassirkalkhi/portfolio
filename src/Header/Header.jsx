@@ -22,7 +22,7 @@ const Header = () => {
             <Link to="/home"  style={wichLink === "home"?   {color:"white"} : {}} onClick={()=>{setLink("home")}} >Home</Link>
             <Link to="/work" style={wichLink === "work"?   {color:"white"} : {}} onClick={()=>{setLink("work")}} >Work</Link>
             <Link to="/resume" style={wichLink === "resume"?   {color:"white"} : {}} onClick={()=>{setLink("resume")}} >Resume</Link>
-            <Link to="/blog" style={wichLink === "resume"?   {color:"white"} : {}} onClick={()=>{setLink("blog")}} >Blog</Link>
+            {/* <Link to="/blog" style={wichLink === "resume"?   {color:"white"} : {}} onClick={()=>{setLink("blog")}} >Blog</Link> */}
 
           </nav>
         </div>

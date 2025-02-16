@@ -54,13 +54,13 @@ const Blog = () => {
                                                      <AvatarFallback>YK</AvatarFallback>
                                                </Avatar>
                                                <div className='flex flex-col'>
-                                                 <span className='text-white/80 font-semibold'>@yasserkalkhi <i class="fa-solid fa-check ms-1"></i></span> 
+                                                 <span className='text-white/80 font-semibold'>@yasserkalkhi <i className="fa-solid fa-check ms-1"></i></span> 
                                                  <span className='text-xs text-white/50 font-semibold  mt-1 ms-1'>{post.date}</span> 
                                                </div>
                                                
                                          </div>
                                          <div>
-                                         <i class="fa-solid fa-share text-white/50 text-xs"></i>
+                                         <i className="fa-solid fa-share text-white/50 text-xs"></i>
                                          </div>
                                     </div>
                                      <div className='p-6 pt-1 flex flex-col '>

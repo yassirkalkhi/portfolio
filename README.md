@@ -1,6 +1,5 @@
 # Yassir Kalkhi's Portfolio
 
-Welcome to my portfolio repository! This project showcases my work as a Full Stack Developer. It contains a collection of web development projects, highlighting my skills in React, Laravel, MySQL, and more.
 
 ## About Me
 
